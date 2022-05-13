@@ -1,8 +1,6 @@
 import { format } from 'date-fns'
 import { Flex, Text } from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
-// import { useParams, useLocation, useNavigate } from "react-router-dom";
-
 
 const Article = (props) => {
     const { publishedAt, title, id = false, saveArticle } = props
@@ -17,8 +15,8 @@ const Article = (props) => {
             justify='space-between' bgColor='#bcfbb1' width={['315px', '450px', '750px', '500px', '750px']}
             borderRadius='8px' minHeight={'100px'}
             p='10px' border='2px solid #999999' onClick={() => clickArticle(id)}>
-            <Text fontSize={['lg', 'xl']}>{title}</Text>
-            <Text alignSelf='flex-end'>{publishedDate}</Text>
+            <Text fontSize={['lg', 'xl']} color='black'>{title}</Text>
+            <Text alignSelf='flex-end' color={'black'}>{publishedDate}</Text>
         </Flex > : ''
     )
 }

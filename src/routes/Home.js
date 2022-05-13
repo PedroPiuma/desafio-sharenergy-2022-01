@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Article from '../components/Article/Article'
 import client from '../providers/client'
-import { Button, Flex, FormControl, Input, InputGroup, InputLeftAddon, Select, Stack, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import { Button, Flex, FormControl, Input, InputGroup, InputLeftAddon, Select, Stack, Text } from '@chakra-ui/react'
 import { format, compareAsc, setDay } from 'date-fns'
 
 const Home = () => {
