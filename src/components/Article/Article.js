@@ -13,10 +13,12 @@ const Article = (props) => {
     }
 
     return (
-        id ? <Flex as={Link} to={`article${id}`} direction='column' align={'center'} justify='space-between' bgColor='antiquewhite'
-            p='15px' border='1px solid green' onClick={() => clickArticle(id)}>
-            <Text fontSize={['xl']}>{title}</Text>
-            <Text>{publishedDate}</Text>
+        id ? <Flex as={Link} to={`article${id}`} direction='column' align={'center'}
+            justify='space-between' bgColor='#e9ffe5' width={['315px', '350px', '400px']}
+            borderRadius='8px' minHeight={'100px'}
+            p='10px' border='2px solid green' onClick={() => clickArticle(id)}>
+            <Text fontSize={['lg']}>{title}</Text>
+            <Text alignSelf='flex-end'>{publishedDate}</Text>
         </Flex > : ''
     )
 }
