@@ -17,15 +17,11 @@ Você também pode ver erros no console caso ocorra.
 ## Aplicação
 
 - A tela inicial exibe em uma lista os `articles` mais recentes e vistos também os 3 últimos vistos pelo usuário, exibindo `title` e `publishedAt`.
--
-- A tela inicial contêm botões para paginar os `articles`.
--
 - A tela inicial contêm um select que permita ao usuário configurar o tamanho da lista, de forma a listar 10 (padrão), 25, 50 ou 100 `articles` por vez.
 - A tela inicial contêm um input para pesquisa por texto do `title`, utilizando endpoint `https://api.spaceflightnewsapi.net/v3/articles?title_contains=TEXTO`, incluindo "texto com espaços e outros caracteres especiais".
 - A tela inicial permite ao usuário a pesquisa de artigos por data de publicação entre duas datas (inicial e final) filtrando a partir da request realizada previamente.
 - Ao clicar em um elemento da lista, a aplicação navega para uma página que exiba todos os detalhes do `article`, a imagem deste, e salva no localStorage sua visualização.
--
-- A página de detalhes de `article` deve conter botões para navegar para o próximo e para o anterior (ordenados por `id`, notando que é possível haver saltos no número do id.
+- A página de detalhes de `article` contêm botões para navegar para o próximo e para o anterior ordenados por `id`.
 
 ## Sobre mim
 

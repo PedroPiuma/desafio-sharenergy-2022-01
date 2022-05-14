@@ -4,7 +4,6 @@ import rocketLogo from '../../img/rocket-logo.png'
 import { Flex, Text, Image, Button } from "@chakra-ui/react"
 
 const Layout = () => {
-    localStorage.setItem('values', JSON.stringify([1, 2, 3]))
     return (
         <Fragment>
             <Flex justify='space-around' align='center' position={'relative'}
