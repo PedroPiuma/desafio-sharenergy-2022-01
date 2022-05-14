@@ -1,9 +1,10 @@
 import { format } from 'date-fns'
 import { Flex, Text } from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
+import saveArticle from '../../functions/saveArticle'
 
 const Article = (props) => {
-    const { publishedAt, title, id = false, saveArticle } = props
+    const { publishedAt, title, id = false } = props
     const publishedDate = publishedAt ? format(new Date(publishedAt), "dd/MM/yyyy HH:mm:ss") : false
 
     const clickArticle = (id) => {
