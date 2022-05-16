@@ -21,11 +21,10 @@ const Home = () => {
         }
         request()
     }, [search])
-
     return (
-        <Stack pt={5} display='flex' flexDirection={['column', 'column', 'column', 'row']} alignItems='center' bgColor='#1a202c' justify={'space-around'}>
+        <Stack pt={5} display='flex' flexDirection={['column', 'column', 'column', 'row']} alignItems='center' bgColor='#1a202c' justify={'space-around'} minHeight='100vh'>
             <SearchBox setSearch={setSearch} setData={setData} data={data} />
-            <Flex direction={'column'}>
+            <Flex direction={'column'} >
                 <Flex direction='column' align='center'>
                     {localStorage.length > 1 ? <Text fontSize={['xl', '2xl']} color='white' mt={5}>Artigos vistos recentemente</Text> : ''}
                     <ViewedArticles />

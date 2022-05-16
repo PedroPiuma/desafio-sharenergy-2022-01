@@ -2,6 +2,8 @@
 
 Repositório que representa uma aplicação web e mobile capaz de requisitar e obter dados do [Spaceflight News API](https://spaceflightnewsapi.net/) a fim de mostrá-los para o usuário final. Utilizou-se ReactJS e React Router DOM para as rotas, além de apresentar uma interface amigável, bonita e limpa, na qual o usuário possa navegar através de botões.
 
+<strong>Vídeo explicativo<strong/>: https://youtu.be/nj7S1I80STI
+
 # Getting Started
 
 [Passo Opcional: Criar o arquivo (.env.local) na past src. Neste arquivo (.env.local) colar (REACT_APP_API_URL = https://api.spaceflightnewsapi.net/v3)<br/>

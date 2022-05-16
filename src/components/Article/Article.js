@@ -6,10 +6,7 @@ import saveArticle from '../../functions/saveArticle'
 const Article = (props) => {
     const { publishedAt, title, id = false } = props
     const publishedDate = publishedAt ? format(new Date(publishedAt), "dd/MM/yyyy HH:mm:ss") : false
-
-    const clickArticle = (id) => {
-        return id ? saveArticle(publishedAt, title, id) : ''
-    }
+    const clickArticle = (id) => id ? saveArticle(publishedAt, title, id) : ''
 
     return (
         id ? <Flex as={Link} to={`article${id}`} direction='column' align={'center'}
