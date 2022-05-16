@@ -1,5 +1,5 @@
 import { Button, Flex, FormControl, Input, InputGroup, InputLeftAddon, Select, Text } from "@chakra-ui/react"
-import filterByDate from "../../functions/filterDate"
+import filterByDate from "../../functions/filterByDate"
 import resetSearch from "../../functions/resetSearch"
 
 const SearchBox = ({ setSearch, setData, data }) => {
@@ -36,7 +36,7 @@ const SearchBox = ({ setSearch, setData, data }) => {
                         borderRadius='0 5px 5px 0' />
                 </InputGroup>
             </FormControl>
-            <Button color={'#04fb04'} bg='transparent' border={'1px solid white'} variant='solid' onClick={() => resetSearch()}>Limpar pesquisa</Button>
+            <Button color={'#04fb04'} bg='transparent' border={'1px solid white'} variant='solid' onClick={() => resetSearch(setSearch)}>Limpar pesquisa</Button>
         </Flex>
     )
 }
